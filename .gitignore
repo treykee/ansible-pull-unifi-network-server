@@ -9,6 +9,7 @@
 !/handlers/**
 !/meta/**
 !/molecule/**
+!/roles/requirements.yml
 !/tasks/**
 !/templates/**
 !/vars/**
