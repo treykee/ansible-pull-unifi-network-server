@@ -1,0 +1,8 @@
+- hosts: localhost
+
+  vars:
+    unifi_version: 9.0.108
+    unifi_fqdn: "unifi.example.com"
+
+  roles:
+    - treykee.unifi-network

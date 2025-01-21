@@ -1,0 +1,25 @@
+# Ignore everything
+*
+# But descend into directories
+!*/
+# These specifically belong in source
+!/.github/**
+!/defaults/**
+!/files/**
+!/handlers/**
+!/meta/**
+!/molecule/**
+!/tasks/**
+!/templates/**
+!/vars/**
+!/venv/requirements.txt
+!/.ansible-lint
+!/.ansible-lint-ignore
+!/.editorconfig
+~/.gitattributes
+!/.gitignore
+!/.prettierrc
+!/.yamllint
+!/LICENSE
+!/local.yml
+!/README.md
