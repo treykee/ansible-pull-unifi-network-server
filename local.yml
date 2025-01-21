@@ -4,5 +4,9 @@
     unifi_version: 9.0.108
     unifi_fqdn: "unifi.example.com"
 
+  pre_tasks:
+    - name: Install required roles
+      command: ansible-galaxy install -r roles/requirements.yml
+
   roles:
     - treykee.unifi-network
