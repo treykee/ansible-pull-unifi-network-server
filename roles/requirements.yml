@@ -1,1 +1,3 @@
-- name: treykee.unifi-network
+---
+roles:
+  - name: treykee.unifi-network

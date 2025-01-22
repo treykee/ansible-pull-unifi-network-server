@@ -1,4 +1,5 @@
-- hosts: localhost
+- name: Apply UniFi Network Application to localhost
+  hosts: localhost
 
   vars:
     unifi_version: 9.0.108
@@ -6,7 +7,9 @@
 
   pre_tasks:
     - name: Install required roles
-      command: ansible-galaxy install -r roles/requirements.yml
+      ansible.builtin.command: ansible-galaxy role install -r roles/requirements.yml
+      args:
+        creates: ./roles/treykee.unifi-network
 
   roles:
     - treykee.unifi-network
