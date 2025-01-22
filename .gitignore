@@ -21,6 +21,7 @@
 !/.gitignore
 !/.prettierrc
 !/.yamllint
+!/ansible.cfg
 !/LICENSE
 !/local.yml
 !/README.md
