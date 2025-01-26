@@ -1,5 +1,6 @@
 - name: Install UniFi Network Application role
   hosts: localhost
+  connection: local
 
   tasks:
     - name: Install required role
@@ -9,6 +10,7 @@
 
 - name: Apply UniFi Network Application role
   hosts: localhost
+  connection: local
 
   tasks:
     - name: Stat role path
