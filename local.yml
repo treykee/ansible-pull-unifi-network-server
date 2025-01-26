@@ -14,7 +14,7 @@
     - name: Stat role path
       ansible.builtin.stat:
         path: ./roles/treykee.unifi-network
-      register: role_path
+      register: target_path
 
     - name: Apply role
       ansible.builtin.include_role:
@@ -22,5 +22,4 @@
       vars:
         unifi_version: 9.0.108
         unifi_fqdn: "unifi.example.com"
-        unifi_admin_username: "admin"
-      when: role_path.stat.exists
+      when: target_path.stat.exists
