@@ -1,6 +1,5 @@
 - name: Install UniFi Network Application role
-  hosts: localhost
-  connection: local
+  hosts: all
 
   tasks:
     - name: Install role to local machine
@@ -9,8 +8,7 @@
         creates: ./roles/treykee.unifi-network
 
 - name: Apply UniFi Network Application role
-  hosts: localhost
-  connection: local
+  hosts: all
 
   tasks:
     - name: Stat role path
