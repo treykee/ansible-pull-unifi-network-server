@@ -3,7 +3,7 @@
   connection: local
 
   tasks:
-    - name: Install required role
+    - name: Install role to local machine
       ansible.builtin.command: ansible-galaxy role install -r roles/requirements.yml
       args:
         creates: ./roles/treykee.unifi-network
