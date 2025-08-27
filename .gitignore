@@ -22,7 +22,7 @@
 !/.prettierrc
 !/.yamllint
 !/ansible.cfg
-!/inventory
+!/inventory.yml
 !/LICENSE
 !/local.yml
 !/README.md
